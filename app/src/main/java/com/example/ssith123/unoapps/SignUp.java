@@ -33,11 +33,11 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONObject;
-import org.ksoap2.SoapEnvelope;
-import org.ksoap2.serialization.SoapObject;
-import org.ksoap2.serialization.SoapPrimitive;
-import org.ksoap2.serialization.SoapSerializationEnvelope;
-import org.ksoap2.transport.HttpTransportSE;
+//import org.ksoap2.SoapEnvelope;
+//import org.ksoap2.serialization.SoapObject;
+//import org.ksoap2.serialization.SoapPrimitive;
+//import org.ksoap2.serialization.SoapSerializationEnvelope;
+//import org.ksoap2.transport.HttpTransportSE;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -53,7 +53,7 @@ import retrofit.RetrofitError;
 import retrofit.client.Response;
 
 public class SignUp extends AppCompatActivity {
-    SoapPrimitive resultString;
+   // SoapPrimitive resultString;
     String TAG = "Response";
     Button signupbutn , clearbutn;
     TextView tvIsConnected;
@@ -159,7 +159,7 @@ public class SignUp extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void result) {
             Log.i(TAG, "onPostExecute");
-            Toast.makeText(SignUp.this, "Response" + resultString, Toast.LENGTH_SHORT).show();
+           // Toast.makeText(SignUp.this, "Response" + resultString, Toast.LENGTH_SHORT).show();
         }
     }
     public void calculate() {
@@ -169,19 +169,19 @@ public class SignUp extends AppCompatActivity {
         String URL = "http://www.w3schools.com/webservices/tempconvert.asmx";
 
         try {
-            SoapObject Request = new SoapObject(NAMESPACE, METHOD_NAME);
-           // Request.addProperty("Celsius", getCel);
+//            SoapObject Request = new SoapObject(NAMESPACE, METHOD_NAME);
+//           // Request.addProperty("Celsius", getCel);
+//
+//            SoapSerializationEnvelope soapEnvelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+//            soapEnvelope.dotNet = true;
+//            soapEnvelope.setOutputSoapObject(Request);
+//
+//            HttpTransportSE transport = new HttpTransportSE(URL);
+//
+//            transport.call(SOAP_ACTION, soapEnvelope);
+//            resultString = (SoapPrimitive) soapEnvelope.getResponse();
 
-            SoapSerializationEnvelope soapEnvelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
-            soapEnvelope.dotNet = true;
-            soapEnvelope.setOutputSoapObject(Request);
-
-            HttpTransportSE transport = new HttpTransportSE(URL);
-
-            transport.call(SOAP_ACTION, soapEnvelope);
-            resultString = (SoapPrimitive) soapEnvelope.getResponse();
-
-            Log.i(TAG, "Result Celsius: " + resultString);
+           // Log.i(TAG, "Result Celsius: " + resultString);
         } catch (Exception ex) {
             Log.e(TAG, "Error: " + ex.getMessage());
         }
