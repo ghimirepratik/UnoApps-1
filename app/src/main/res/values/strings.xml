@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">UnoApps</string>
+    <string name="action_settings">Settings</string>
+    <string name="signup_text">Uno</string>
+    <string name="firstname_hint"><font size="10">enter your name here</font></string>
+    <string name="title_activity_home">Home</string>
+    <string name="unocard">UNO CARD</string>
+    <string name="businesslisting">BUSINESS LISTING</string>
+    <string name="discountlist">DISCOUNT LIST</string>
+    <string name="event">EVENT</string>
+    <string name="coupontext">COUPON</string>
+    <string name="registertext">REGISTER</string>
+    <string name="title_activity_discount_login_section">DiscountLoginSection</string>
+    <string name="discountlogin">Login</string>
+    <string name="discountregister">Register</string>
+    <string name="forgotpassword">Forgot Password</string>
+    <string name="newtouno">New to UNO.Apply for card?</string>
+    <string name="signuptext">SignUp</string>
+    <string name="loginfbtext">Login With Facebook</string>
+    <string name="gmailtext">Login With google+</string>
+    <string name="sendmelink">Send me Link</string>
+    <string name="title_activity_forgetpassword">Forgetpassword</string>
+    <string name="title_activity_full_registration">FullRegistration</string>
+    <string name="title_fullregistration">Full Registration</string>
+    <string name="title_activity_facebook_registration">FacebookRegistration</string>
+    <string name="title_activity_google_registraton">GoogleRegistraton</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="Subscribenews">Subscribe to our NewsLetter?</string>
+    <string name="applyuno">Apply for UNO card</string>
+    <string name="title_activity_noncard_holder">NoncardHolder</string>
+    <string name="donthavediscountcard">YOU DONT HAVE DISCOUNT CARD.</string>
+    <string name="discountcardbenefittext">If you apply for the UNO discount card,you will get benefits.</string>
+    <string name="termcondition">Term and conditions</string>
+    <string name="yesiwant">Yes I want UNO card</string>
+    <string name="title_activity_card_holder">CardHolder</string>
+    <string name="pleasepresentthiscard">PLEASE PRESENT THIS VIRTUAL CARD BEFORE ASKING FOR THE BILL.</string>
+    <string name="facebook_app_id">1640939182881061</string>
+    <string name="title_activity_log_out">LogOut</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyBqUiHf7SjsJWx9Za1MvX3ULoURqHnXDoM</string>
+</resources>
