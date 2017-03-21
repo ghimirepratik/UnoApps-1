@@ -54,6 +54,7 @@ import retrofit.client.Response;
 
 public class SignUp extends AppCompatActivity {
     SoapPrimitive resultString;
+    String TAG = "JUSTTEST";
     String TAG = "Response";
     Button signupbutn , clearbutn;
     TextView tvIsConnected;
