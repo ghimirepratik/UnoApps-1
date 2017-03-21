@@ -63,6 +63,7 @@ public class SignUp extends AppCompatActivity {
     public static SharedPreferences sh;
     public static SharedPreferences.Editor editor;
     //just a test
+    //just a 2test
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
