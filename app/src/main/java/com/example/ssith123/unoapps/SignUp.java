@@ -62,8 +62,7 @@ public class SignUp extends AppCompatActivity {
     TextView signuptitle;
     public static SharedPreferences sh;
     public static SharedPreferences.Editor editor;
-    //just a test
-    //just a 2test
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -317,40 +316,7 @@ public class SignUp extends AppCompatActivity {
         }
         return false;
     }
-//        boolean valid=true;
-//        if (firstname.isEmpty()){
-////            til.setError("please enter valid name");
-//            firstnametxt.setError("please enter valid name");
-//            valid=false;
-//            //usernameedt.setFocusable(true);
-//        }else if (latname.isEmpty()){
-//            lastnametxt.setError("please enter valid age");
-////            til1.setError("please enter valid age");
-//            valid=false;
-//            // passwordedt.setFocusable(true);
-//        }else if (mobilenum.isEmpty()||mobilenum.length()<=9){
-//            mobilenumtxt.setError("please enter mobile num");
-////            til1.setError("please enter valid age");
-//            valid=false;
-//            // passwordedt.setFocusable(true);
-//        }else if (email.isEmpty()){
-//            emailtxt.setError("please enter email id");
-////            til1.setError("please enter valid age");
-//            valid=false;
-//            // passwordedt.setFocusable(true);
-//        }else if (pasword.isEmpty()||pasword.length()<=7){
-//            passwordtxt.setError("please enter password");
-////            til1.setError("please enter valid age");
-//            valid=false;
-//            // passwordedt.setFocusable(true);
-//        }else if (pasword.isEmpty()||pasword.length()<=7){
-//            cpasswordtxt.setError("please enter password");
-////            til1.setError("please enter valid age");
-//            valid=false;
-//            // passwordedt.setFocusable(true);
-//        }
-//
-//        return valid;
+
  public boolean isConnected(){
 
     ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Activity.CONNECTIVITY_SERVICE);
@@ -360,26 +326,4 @@ public class SignUp extends AppCompatActivity {
     else
         return false;
 }
-
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.menu_sign_up, menu);
-//        return true;
-//    }
-
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
 }
