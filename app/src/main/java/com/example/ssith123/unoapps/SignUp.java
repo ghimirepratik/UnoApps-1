@@ -62,7 +62,7 @@ public class SignUp extends AppCompatActivity {
     TextView signuptitle;
     public static SharedPreferences sh;
     public static SharedPreferences.Editor editor;
-
+    //just a test
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
