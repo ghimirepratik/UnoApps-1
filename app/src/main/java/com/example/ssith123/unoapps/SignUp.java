@@ -159,7 +159,7 @@ public class SignUp extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void result) {
             Log.i(TAG, "onPostExecute");
-            Toast.makeText(SignUp.this, "Response" + resultString, Toast.LENGTH_SHORT);
+            Toast.makeText(SignUp.this, "Response" + resultString, Toast.LENGTH_SHORT).show();
         }
     }
     public void calculate() {
