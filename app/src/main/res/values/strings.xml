@@ -4,9 +4,13 @@
     <string name="signup_text">Uno</string>
     <string name="firstname_hint"><font size="10">enter your name here</font></string>
     <string name="title_activity_home">Uno</string>
-    <string name="unocard">UNO CARD</string>
-    <string name="businesslisting">BUSINESS LISTING</string>
+    <string name="unocard">MY UNO CARD</string>
+    <string name="notification">NOTIFICATIONS</string>
+    <string name="businesslisting">BUSINESS LIST</string>
     <string name="discountlist">DISCOUNT LIST</string>
+    <string name="coupon">COUPONS</string>
+    <string name="deal">DEALS</string>
+    <string name="newarrivals">NEWARRIVALS</string>
     <string name="event">EVENT</string>
     <string name="coupontext">COUPON</string>
     <string name="registertext">REGISTER</string>
