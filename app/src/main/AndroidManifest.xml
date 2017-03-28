@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ssith123.unoapps">
-    <supports-screens android:anyDensity="true"
+
+    <supports-screens
+        android:anyDensity="true"
         android:largeScreens="true"
         android:normalScreens="true"
-        android:smallScreens="true"
-        android:xlargeScreens="true"
         android:resizeable="true"
-        />
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
     <uses-permission android:name="com.javapapers.currentlocationinmap.permission.MAPS_RECEIVE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -28,12 +30,11 @@
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
+
         <activity
             android:name=".SignUp"
             android:label=""
-            android:theme="@style/AppTheme1">
-
-        </activity>
+            android:theme="@style/AppTheme1"></activity>
         <activity
             android:name=".Activity.Home"
             android:label="@string/title_activity_home"
@@ -44,9 +45,9 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".Activity.Forgetpassword"
@@ -98,7 +99,13 @@
         <activity
             android:name=".Activity.MySuccess"
             android:label="@string/title_activity_my_success"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.Homes"
+            android:label="@string/title_activity_homes"
+            android:theme="@style/AppTheme2">
+
+        </activity>
     </application>
 
 </manifest>

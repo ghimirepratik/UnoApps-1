@@ -1,24 +1,24 @@
 <resources>
     <!--<style name="AppTheme" parent="MyMaterialTheme.Base">-->
-        <!--&lt;!&ndash;<item name="windowActionBar">false</item>&ndash;&gt;-->
-        <!--&lt;!&ndash;<item name="windowNoTitle">true</item>&ndash;&gt;-->
-        <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
-        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
-        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
-        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
-        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--&lt;!&ndash;<item name="windowActionBar">false</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="windowNoTitle">true</item>&ndash;&gt;-->
+    <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+    <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
     <!--</style>-->
     <!--<style name="AppTheme.NoActionBar">-->
-        <!--<item name="windowActionBar">false</item>-->
-        <!--<item name="windowNoTitle">true</item>-->
-        <!--&lt;!&ndash;<item name="colorPrimaryDark">#2b742a</item>&ndash;&gt;-->
-        <!--&lt;!&ndash;<item name="colorPrimary">#2b742a</item>&ndash;&gt;-->
+    <!--<item name="windowActionBar">false</item>-->
+    <!--<item name="windowNoTitle">true</item>-->
+    <!--&lt;!&ndash;<item name="colorPrimaryDark">#2b742a</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="colorPrimary">#2b742a</item>&ndash;&gt;-->
     <!--</style>-->
     <!--<style name="AppTheme1">-->
-        <!--<item name="windowActionBar">false</item>-->
-        <!--<item name="windowNoTitle">true</item>-->
-        <!--<item name="colorPrimary">#000</item>-->
-        <!--<item name="colorPrimaryDark">#000</item>-->
+    <!--<item name="windowActionBar">false</item>-->
+    <!--<item name="windowNoTitle">true</item>-->
+    <!--<item name="colorPrimary">#000</item>-->
+    <!--<item name="colorPrimaryDark">#000</item>-->
     <!--</style>-->
     <!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
 

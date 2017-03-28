@@ -10,9 +10,9 @@
     tools:context="com.example.ssith123.unoapps.Activity.Home"
     tools:showIn="@layout/activity_home">
     <!--<ImageView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:background="@mipmap/ic_launcher"-->
-        <!--android:layout_height="wrap_content" />-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:background="@mipmap/ic_launcher"-->
+    <!--android:layout_height="wrap_content" />-->
     <android.support.v4.widget.NestedScrollView
         android:layout_height="match_parent"
         android:background="#fff"
@@ -68,23 +68,23 @@
                     android:layout_marginBottom="1dp"
                     android:layout_height="120dp">
                     <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                    android:layout_width="50dp"
-                    android:id="@+id/notoficationimage"
-                    android:layout_gravity="center"
-                    android:layout_height="50dp"
-                    android:src="@drawable/calendar" />
-                    <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_gravity="center"
-                    android:id="@+id/notificationtext"
-                    android:paddingBottom="5dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/notification" />
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:id="@+id/notoficationimage"
+                            android:layout_gravity="center"
+                            android:layout_height="50dp"
+                            android:src="@drawable/notification_icon" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/notificationtext"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/notification" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
@@ -106,23 +106,23 @@
                     android:layout_height="120dp">
 
                     <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                    android:layout_width="50dp"
-                    android:id="@+id/busnesslstimg"
-                    android:layout_gravity="center"
-                    android:layout_height="50dp"
-                    android:src="@drawable/businesslist" />
-                    <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_gravity="center"
-                    android:id="@+id/businesslisttxt"
-                    android:paddingBottom="5dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/businesslisting" />
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:id="@+id/busnesslstimg"
+                            android:layout_gravity="center"
+                            android:layout_height="50dp"
+                            android:src="@drawable/business_list_icon" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/businesslisttxt"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/businesslisting" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
@@ -137,24 +137,24 @@
                     android:layout_height="120dp">
 
                     <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                    android:layout_width="50dp"
-                    android:id="@+id/discountlistimg"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/discount" />
-                    <TextView
-                    android:layout_width="wrap_content"
-                    android:id="@+id/discountlisttext"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/discountlist"
-                    />
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:id="@+id/discountlistimg"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/discount_icon" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/discountlisttext"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/discountlist"
+                            />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
@@ -183,14 +183,15 @@
                             android:layout_width="50dp"
                             android:id="@+id/couponimg"
                             android:layout_height="50dp"
-                            android:src="@drawable/coupon" />
+                            android:layout_gravity="center"
+                            android:src="@drawable/coupons_icon" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:id="@+id/coupontext"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:text="@string/coupontext"
-                            android:paddingBottom="5dp"
+                            android:layout_marginTop="10dp"
                             />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
@@ -215,11 +216,12 @@
                             android:layout_gravity="center"
                             android:layout_height="50dp"
                             android:backgroundTint="#e12200"
-                            android:src="@drawable/register" />
+                            android:src="@drawable/deals_icon" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_gravity="center"
                             android:id="@+id/registertext"
+                            android:layout_marginTop="10dp"
                             android:layout_height="wrap_content"
                             android:text="@string/deal" />
                     </LinearLayout>
@@ -249,13 +251,15 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:id="@+id/newarrivalimg"
+                            android:layout_gravity="center"
                             android:layout_height="50dp"
-                            android:src="@drawable/coupon" />
+                            android:src="@drawable/new_arrival_icon" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:id="@+id/newarrivaltext"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
                             android:text="@string/newarrivals"
                             android:paddingBottom="5dp"
                             />
@@ -282,11 +286,12 @@
                             android:layout_gravity="center"
                             android:layout_height="50dp"
                             android:backgroundTint="#e12200"
-                            android:src="@drawable/register" />
+                            android:src="@drawable/event_icon" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_gravity="center"
                             android:id="@+id/eventtext"
+                            android:layout_marginTop="10dp"
                             android:layout_height="wrap_content"
                             android:text="@string/event" />
                     </LinearLayout>
@@ -294,5 +299,5 @@
             </LinearLayout>
 
         </LinearLayout>
-</android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.NestedScrollView>
 </RelativeLayout>

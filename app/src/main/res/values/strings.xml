@@ -57,5 +57,9 @@
     <string name="signup_password">Enter Your password</string>
     <string name="signup_confirmpassword">Enter Your password again</string>
     <string name="signup_buttonclear">Clear</string>
+    <string name="title_activity_homes">Homes</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 </resources>

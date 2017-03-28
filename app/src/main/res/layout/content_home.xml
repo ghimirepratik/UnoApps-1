@@ -77,7 +77,7 @@
                     android:id="@+id/notoficationimage"
                     android:layout_gravity="center"
                     android:layout_height="50dp"
-                    android:src="@drawable/calendar" />
+                    android:src="@drawable/notification_icon" />
                     <TextView
                     android:layout_width="wrap_content"
                     android:layout_gravity="center"
@@ -115,7 +115,7 @@
                     android:id="@+id/busnesslstimg"
                     android:layout_gravity="center"
                     android:layout_height="50dp"
-                    android:src="@drawable/businesslist" />
+                    android:src="@drawable/business_list_icon" />
                     <TextView
                     android:layout_width="wrap_content"
                     android:layout_gravity="center"
@@ -146,7 +146,7 @@
                     android:id="@+id/discountlistimg"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/discount" />
+                    android:src="@drawable/discount_icon" />
                     <TextView
                     android:layout_width="wrap_content"
                     android:id="@+id/discountlisttext"
@@ -184,7 +184,7 @@
                             android:id="@+id/couponimg"
                             android:layout_height="50dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/coupon" />
+                            android:src="@drawable/coupons_icon" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:id="@+id/coupontext"
@@ -216,7 +216,7 @@
                             android:layout_gravity="center"
                             android:layout_height="50dp"
                             android:backgroundTint="#e12200"
-                            android:src="@drawable/register" />
+                            android:src="@drawable/deals_icon" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_gravity="center"
@@ -253,7 +253,7 @@
                             android:id="@+id/newarrivalimg"
                             android:layout_gravity="center"
                             android:layout_height="50dp"
-                            android:src="@drawable/coupon" />
+                            android:src="@drawable/new_arrival_icon" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:id="@+id/newarrivaltext"
@@ -286,7 +286,7 @@
                             android:layout_gravity="center"
                             android:layout_height="50dp"
                             android:backgroundTint="#e12200"
-                            android:src="@drawable/register" />
+                            android:src="@drawable/event_icon" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_gravity="center"

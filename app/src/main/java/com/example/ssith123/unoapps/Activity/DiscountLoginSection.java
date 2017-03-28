@@ -172,7 +172,7 @@ public class DiscountLoginSection extends AppCompatActivity {
 //        return false;
     }
     public void signupSuccess(){
-        Intent in14 = new Intent(DiscountLoginSection.this, Home.class);
+        Intent in14 = new Intent(DiscountLoginSection.this, Homes.class);
         startActivity(in14);
         //what u want to do after sign success
         Toast.makeText(DiscountLoginSection.this,"success",Toast.LENGTH_SHORT).show();
