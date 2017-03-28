@@ -3,6 +3,7 @@ package com.example.ssith123.unoapps;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -74,14 +75,6 @@ public class SignUp extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
         signupbutn = (Button) findViewById(R.id.btnSignUp);
         clearbutn = (Button) findViewById(R.id.btnClear);
         signuptitle = (TextView) findViewById(R.id.signuptitle);
@@ -94,22 +87,29 @@ public class SignUp extends AppCompatActivity {
         emailtxt = (AutoCompleteTextView) findViewById(R.id.txtemail);
         passwordtxt = (AutoCompleteTextView) findViewById(R.id.txtpassword);
         cpasswordtxt = (AutoCompleteTextView) findViewById(R.id.txtcpassword);
-        tvIsConnected = (TextView) findViewById(R.id.tvIsConnected);
-        if(isConnected()){
-            tvIsConnected.setBackgroundColor(0xFF00CC00);
-            tvIsConnected.setText("You are conncted");
-        }
-        else{
-            tvIsConnected.setText("You are NOT conncted");
-        }
+        //tvIsConnected = (TextView) findViewById(R.id.tvIsConnected);
+//        if(isConnected()){
+//            //tvIsConnected.setBackgroundColor(0xFF00CC00);
+//          //  tvIsConnected.setText("You are conncted");
+//            Toast.makeText(SignUp.this,"u are connected",Toast.LENGTH_SHORT).show();
+//        }
+//        else{
+//            //tvIsConnected.setText("You are NOT conncted");
+//            Toast.makeText(SignUp.this,"u are not connected",Toast.LENGTH_SHORT).show();
+//        }
     }
     public void butnClick(View v){
         int id=v.getId();
         switch (id){
             case R.id.btnSignUp:
                 register();
-                if (!validate()){
-                    Toast.makeText(SignUp.this,"form filling error",Toast.LENGTH_SHORT).show();
+                if (!validate() || !isConnected()){
+                    signupSuccess();
+//                    Toast.makeText(SignUp.this,"form filling error and check ur internet connection",Toast.LENGTH_SHORT).show();
+                    Snackbar.make(v,"All field are compulsory and check ur internet connection.",Snackbar.LENGTH_LONG)
+                            .setActionTextColor(0xFFFF0000)
+                            .show();
+
                 }else
                     signupSuccess();
                 break;
@@ -244,17 +244,17 @@ public class SignUp extends AppCompatActivity {
         boolean valid =true;
         if (!isValidFirstname(Firstname)) {
             //Set error message for password field
-            firstnametxt.setError("firstname cannot be empty.");
+           // firstnametxt.setError("firstname cannot be empty.");
             valid = false;
         }
         if (!isValidLastname(Lastname)) {
             //Set error message for password field
-            lastnametxt.setError("lastname cannot be empty.");
+           // lastnametxt.setError("lastname cannot be empty.");
             valid = false;
         }
         if (!isValidMobilenum(Mobilenum)) {
             //Set error message for password field
-            mobilenumtxt.setError("mobilenumber must be 10 number.");
+           // mobilenumtxt.setError("mobilenumber must be 10 number.");
             valid = false;
         }
         if (!isValidEmail(Emailid)) {
@@ -264,7 +264,7 @@ public class SignUp extends AppCompatActivity {
         }
          if (!isValidPassword(Password)) {
             //Set error message for password field
-            passwordtxt.setError("Password cannot be empty.");
+           // passwordtxt.setError("Password cannot be empty.");
              valid = false;
         } if (!isValidCpassword(cpassword)) {
             //Set error message for password field

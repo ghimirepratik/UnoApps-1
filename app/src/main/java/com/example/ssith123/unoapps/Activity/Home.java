@@ -31,7 +31,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(Home.this,"card1",Toast.LENGTH_SHORT).show();
-                Intent intent2 = new Intent(Home.this,DiscountLoginSection.class);
+                Intent intent2 = new Intent(Home.this,FullRegistration.class);
                 startActivity(intent2);
             }
         });

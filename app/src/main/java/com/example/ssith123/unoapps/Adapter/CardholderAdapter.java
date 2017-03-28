@@ -18,16 +18,21 @@ import com.example.ssith123.unoapps.R;
 public class CardholderAdapter extends ArrayAdapter<String> {
 
     private final Activity context;
-    private final String[] itemname;
-    private final String[] itemhomeadd;
-    private final String[] itemdate;
+    private final String[] Nme;
+    private final String[] Ucardnumber;
+    private final String[] Ucardexpirydate;
+    private final String[] Ucardcity;
+//    private final String[] Pbefore;
+//    private final String[] Ctime;
    // private final Integer[] imgid;
-    public CardholderAdapter(Activity context, String[] itemname,String[] itemhomeadd,String[] itemdate) {
-        super(context, R.layout.mylist,itemname);
+    public CardholderAdapter(Activity context, String[] Nme,String[] Ucardnumber,String[] Ucardexpirydate,String[] Ucardcity) {
+        super(context, R.layout.mylist,Nme);
         this.context= context;
-        this.itemname = itemname;
-        this.itemhomeadd = itemhomeadd;
-        this.itemdate = itemdate;
+        this.Nme = Nme;
+        this.Ucardnumber = Ucardnumber;
+        this.Ucardexpirydate = Ucardexpirydate;
+        this.Ucardcity = Ucardcity;
+
     }
 
     @NonNull
@@ -36,11 +41,17 @@ public class CardholderAdapter extends ArrayAdapter<String> {
         LayoutInflater inflater=context.getLayoutInflater();
         View rowView=inflater.inflate(R.layout.mylist, null,true);
         TextView nametxt = (TextView) rowView.findViewById(R.id.navetv);
-        TextView homeaddtxt = (TextView) rowView.findViewById(R.id.homeaddtv);
+        TextView ucardnumber = (TextView) rowView.findViewById(R.id.ucardnumbertv);
         TextView datetxt = (TextView) rowView.findViewById(R.id.datetv);
-        nametxt.setText(itemname[position]);
-        homeaddtxt.setText(itemhomeadd[position]);
-        datetxt.setText(itemdate[position]);
+        TextView cardcitytxt = (TextView) rowView.findViewById(R.id.cardcitytv);
+//        TextView presentbeforetxt = (TextView) rowView.findViewById(R.id.presentbeforetv);
+//        TextView currenttimetxt = (TextView) rowView.findViewById(R.id.currenttimetv);
+        nametxt.setText(Nme[position]);
+        ucardnumber.setText(Ucardnumber[position]);
+        datetxt.setText(Ucardexpirydate[position]);
+        cardcitytxt.setText(Ucardcity[position]);
+//        presentbeforetxt.setText(Pbefore[position]);
+//        currenttimetxt.setText(Ctime[position]);
         return rowView;
     }
 }
