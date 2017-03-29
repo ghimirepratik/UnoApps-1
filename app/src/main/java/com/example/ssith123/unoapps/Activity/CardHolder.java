@@ -27,30 +27,32 @@ public class CardHolder extends AppCompatActivity {
         setContentView(R.layout.activity_card_holder);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        Bundle bundle = getIntent().getExtras();
-        String Name = bundle.getString("Name");
-        String Unocarnumber = bundle.getString("Unocarnumber");
-        String Unocardexpirydate = bundle.getString("Unocardexpirydate");
-        String Unocardcity = bundle.getString("Unocardcity");
-        String Currenttime = bundle.getString("Currenttime");
-        String Presentbefore = bundle.getString("Presentbefore");
-        Toast.makeText(CardHolder.this,Name,Toast.LENGTH_SHORT).show();
+//        Bundle bundle = getIntent().getExtras();
+//        String Name = bundle.getString("Name");
+//        String Unocarnumber = bundle.getString("Unocarnumber");
+//        String Unocardexpirydate = bundle.getString("Unocardexpirydate");
+//        String Unocardcity = bundle.getString("Unocardcity");
+//        String Currenttime = bundle.getString("Currenttime");
+//        String Presentbefore = bundle.getString("Presentbefore");
+//        Toast.makeText(CardHolder.this,Name,Toast.LENGTH_SHORT).show();
+
+
 //        SharedPreferences pref = getApplicationContext().getSharedPreferences("Pref", 0);
 //        //SharedPreferences.Editor editor = pref.edit();
 //        spname = pref.getString("Name",null);
 //        sphome = pref.getString("Homeaddress",null);
 //        spdate = pref.getString("Date",null);
-        String[] Nme={Name};
-        String[] Ucardnumber={Unocarnumber};
-        String[] Ucardexpirydate={Unocardexpirydate};
-        String[] Ucardcity={Unocardcity};
-        String[] Pbefore={Presentbefore};
-        String[] Ctime={Currenttime};
-        CardholderAdapter cardholderAdapter = new CardholderAdapter(this,Nme,Ucardnumber,Ucardexpirydate,
-                Ucardcity);
-        ListView listView = (ListView) findViewById(R.id.list1);
-        listView.setAdapter(cardholderAdapter);
-        Toast.makeText(CardHolder.this, Name+Presentbefore+Currenttime+Unocardcity,Toast.LENGTH_SHORT).show();
+//        String[] Nme={Name};
+//        String[] Ucardnumber={Unocarnumber};
+//        String[] Ucardexpirydate={Unocardexpirydate};
+//        String[] Ucardcity={Unocardcity};
+//        String[] Pbefore={Presentbefore};
+//        String[] Ctime={Currenttime};
+//        CardholderAdapter cardholderAdapter = new CardholderAdapter(this,Nme,Ucardnumber,Ucardexpirydate,
+//                Ucardcity);
+//        ListView listView = (ListView) findViewById(R.id.list1);
+//        listView.setAdapter(cardholderAdapter);
+//        Toast.makeText(CardHolder.this, Name+Presentbefore+Currenttime+Unocardcity,Toast.LENGTH_SHORT).show();
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -59,14 +61,14 @@ public class CardHolder extends AppCompatActivity {
 //                        .setAction("Action", null).show();
 //            }
 //        });
-        presentbeforetv = (TextView) findViewById(R.id.presentbeforetv);
-        presentbeforetv.setText(Presentbefore);
-        datetv = (TextView) findViewById(R.id.datetv);
-        datetv.setText(Currenttime);
+//        presentbeforetv = (TextView) findViewById(R.id.presentbeforetv);
+//        presentbeforetv.setText(Presentbefore);
+//        datetv = (TextView) findViewById(R.id.datetv);
+//        datetv.setText(Currenttime);
     }
     public void clickBack(View v){
         Button backbutn = (Button) findViewById(R.id.backbutn);
-        Intent in9 = new Intent(CardHolder.this, DiscountLoginSection.class);
+        Intent in9 = new Intent(CardHolder.this, Homes.class);
         startActivity(in9);
     }
 

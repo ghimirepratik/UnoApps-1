@@ -58,8 +58,12 @@
     <string name="signup_confirmpassword">Enter Your password again</string>
     <string name="signup_buttonclear">Clear</string>
     <string name="title_activity_homes">Homes</string>
-
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="account_ssetting">Account Setting</string>
+    <string name="register_yourbusiness">Register Your Business</string>
+    <string name="discount_taken">Discounts Taken</string>
+    <string name="point_taken">Points Taken</string>
+    <string name="change_password">Change Password</string>
 
 </resources>
